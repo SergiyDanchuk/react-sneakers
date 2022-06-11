@@ -1,4 +1,4 @@
-const Header = () => {
+const Header = ( props ) => {
   return (
     <header className="d-flex justify-between align-center p-40" >
       <div className="d-flex align-center">
@@ -8,7 +8,7 @@ const Header = () => {
           <p className="opacity-5">Магазин найкращих кросівок</p>
         </div>
       </div>
-      <ul  className="d-flex">
+      <ul  className="d-flex" onClick={ props.onClickCart }>
         <li className="mr-30 cu-p">
           <img width={18} height={17} src="/img/cart.svg" alt="cart"/>
           <span>1250 грн.</span>
